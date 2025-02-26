@@ -18,7 +18,7 @@ const Brand = () => {
           {/* Fashion */}
 
           <p> <span className='font-bold'>Fashion:</span> T-Shirt | Short & jeans | Jacket | Dress & Frock | Inner Wear | Hosiery</p>
-
+tmi
           {/* footwear */}
           <div className='flex'>
             <h3 className="font-semibold text-gray-700 mb-2"></h3>
