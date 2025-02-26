@@ -7,18 +7,18 @@ const Brand = () => {
     <div className="w-full bg-gray-100 py-12 flex justify-center">
       <div className="flex flex-col justify-center items-center w-11/12 mx-auto">
         <h2 className="text-gray-600 font-semibold text-sm mb-4">BRANDS DIRECTORY</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 text-gray-500 text-sm">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 text-gray-500 text-sm">
           {/* jewellery */}
 
 
-          <p><span className='font-bold'>Jewellery:</span> Necklaces | Earrings | Couple Rings | Pendants | Crystal | <br /> Bangles | Bracelets | Nose Pin | Chain | Earrings | Couple Rings</p>
+          <p><span className='font-bold'>Jewellery:</span> Necklaces | Earrings | Couple Rings | Pendants | Crystal | Bangles | Bracelets | Nose Pin | Chain | Earrings | Couple Rings</p>
 
 
 
           {/* Fashion */}
 
           <p> <span className='font-bold'>Fashion:</span> T-Shirt | Short & jeans | Jacket | Dress & Frock | Inner Wear | Hosiery</p>
-tmi
+
           {/* footwear */}
           <div className='flex'>
             <h3 className="font-semibold text-gray-700 mb-2"></h3>
