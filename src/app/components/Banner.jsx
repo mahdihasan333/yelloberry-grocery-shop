@@ -20,11 +20,6 @@ const Banner = () => {
                         Shop Now
                     </button>
                 </div>
-
-
-
-
-
                 {/* Bottom Indicator */}
                 <div className="absolute bottom-6 flex space-x-2">
                     <span className="w-4 h-2 bg-orange-500 rounded"></span>
