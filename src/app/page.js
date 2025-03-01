@@ -7,6 +7,7 @@ import DiscountBanner from "./components/DiscountBanner";
 import DayOfTheDeal from "./components/DayOfTheDeal";
 import Fresh from "./components/Fresh";
 import NewArrivals from "./components/NewArrivals";
+import TopVendors from "./components/TopVendors";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <Fresh/>
       <NewArrivals/>
       <ShippingSection/>
+      <TopVendors/>
       <Brand/>
     </div>
   );
