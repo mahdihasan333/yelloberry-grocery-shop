@@ -6,6 +6,7 @@ import ShopBanner from "./components/ShopBanner";
 import DiscountBanner from "./components/DiscountBanner";
 import DayOfTheDeal from "./components/DayOfTheDeal";
 import Fresh from "./components/Fresh";
+import NewArrivals from "./components/NewArrivals";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <DayOfTheDeal/>
       <ShopBanner/>
       <Fresh/>
+      <NewArrivals/>
       <ShippingSection/>
       <Brand/>
     </div>
