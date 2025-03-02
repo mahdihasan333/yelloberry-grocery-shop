@@ -8,6 +8,9 @@ import DayOfTheDeal from "./components/DayOfTheDeal";
 import Fresh from "./components/Fresh";
 import NewArrivals from "./components/NewArrivals";
 import TopVendors from "./components/TopVendors";
+import Testimonials from "./components/Testimonials";
+
+
 
 export default function Home() {
   return (
@@ -20,6 +23,7 @@ export default function Home() {
       <NewArrivals/>
       <ShippingSection/>
       <TopVendors/>
+      <Testimonials/>
       <Brand/>
     </div>
   );
