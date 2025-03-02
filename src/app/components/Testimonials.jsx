@@ -3,7 +3,7 @@
 
 const Testimonials = () => {
   return (
-    <div className="relative flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="relative flex items-center justify-center bg-gray-100">
       {/* Background Shapes */}
       <div className="absolute inset-0 flex justify-center items-center -z-10">
         <div className="absolute w-4 h-4 bg-gray-300 rounded-md top-10 left-10"></div>

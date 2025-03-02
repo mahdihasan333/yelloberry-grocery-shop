@@ -9,6 +9,7 @@ import Fresh from "./components/Fresh";
 import NewArrivals from "./components/NewArrivals";
 import TopVendors from "./components/TopVendors";
 import Testimonials from "./components/Testimonials";
+import InstaSection from "./components/InstaSection";
 
 
 
@@ -24,6 +25,7 @@ export default function Home() {
       <ShippingSection/>
       <TopVendors/>
       <Testimonials/>
+      <InstaSection/>
       <Brand/>
     </div>
   );
