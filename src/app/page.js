@@ -15,7 +15,7 @@ import InstaSection from "./components/InstaSection";
 
 export default function Home() {
   return (
-    <div>
+    <div className="bg-[#e5e7eb]">
       <Banner/>
       <DiscountBanner/>
       <DayOfTheDeal/>
