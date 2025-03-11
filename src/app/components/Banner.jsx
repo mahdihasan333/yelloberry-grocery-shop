@@ -2,18 +2,16 @@
 
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Autoplay } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/navigation';
 
 const Banner = () => {
     return (
         <section className="relative flex items-center justify-center h-[95vh] bg-[#eaeaea]">
             <Swiper
-                modules={[Navigation, Autoplay]}
+                modules={[Autoplay]}
                 spaceBetween={10}
                 slidesPerView={1}
-                navigation
                 loop
                 autoplay={{ delay: 2500, disableOnInteraction: false }}
                 className="w-full h-full"

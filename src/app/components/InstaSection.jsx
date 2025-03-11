@@ -1,57 +1,66 @@
 "use client";
 
 import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
+import image1 from "../assets/images/card/7.jpg.png";
+import image2 from "../assets/images/card/8.jpg.png";
+import image3 from "../assets/images/card/9.jpg.png";
+import image4 from "../assets/images/card/10.jpg.png";
+
+const posts = [
+  {
+    id: 1,
+    image: image1,
+    date: "June 30, 2024",
+    category: "organic",
+    title: "Marketing Guide: 5 Steps to Success."
+  },
+  {
+    id: 2,
+    image: image2,
+    date: "May 10, 2023",
+    category: "organic",
+    title: "Best way to solve business deal issue."
+  },
+  {
+    id: 3,
+    image: image3,
+    date: "Jan 10, 2022",
+    category: "organic",
+    title: "Business ideas to grow your business."
+  },
+  {
+    id: 4,
+    image: image4,
+    date: "Feb 12, 2022",
+    category: "organic",
+    title: "31 customer stats to know in 2020."
+  }
+];
 
 const InstaSection = () => {
   return (
-    <div className="bg-gray-100 flex flex-col items-center px-4 py-10">
-      {/* Top Card Section */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-11/12 mx-auto">
-        {[
-          {
-            date: "June 8, 2014",
-            title: "Marketing Guide: 5 Steps to Success.",
-          },
-          {
-            date: "May 9, 2023",
-            title: "Best way to solve business deal issue.",
-          },
-          {
-            date: "Jan 1, 2020",
-            title: "Business ideas to grow your business.",
-          },
-          {
-            date: "Feb 1, 2022",
-            title: "31 customer stats know in 2020.",
-          },
-        ].map((item, index) => (
-          <div
-            key={index}
-            className="bg-white rounded-xl shadow-lg overflow-hidden"
+    <div className="bg-gray-50 flex flex-col items-center px-6 py-12">
+      <h2 className="text-2xl font-bold mb-6 text-gray-800">Latest Insights</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
+        {posts.map((post, index) => (
+          <motion.div
+            key={post.id}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+            className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow"
           >
-            <div className="h-40 bg-gray-300"></div>
+            <div className="relative h-48 w-full">
+              <Image src={post.image} alt={post.title} layout="fill" objectFit="cover" className="rounded-t-2xl" />
+            </div>
             <div className="p-4">
-              <p className="text-xs text-gray-500">{item.date} - organic</p>
-              <h3 className="text-sm font-semibold mt-1">{item.title}</h3>
+              <p className="text-xs text-gray-500">{post.date} - {post.category}</p>
+              <h3 className="text-sm font-semibold mt-1 text-gray-800">{post.title}</h3>
             </div>
-          </div>
+          </motion.div>
         ))}
-      </div>
-
-      {/* Bottom Image Grid with #Insta */}
-      <div className="grid grid-cols-3 sm:grid-cols-5 gap-4 mt-10">
-        {Array(5)
-          .fill("")
-          .map((_, index) => (
-            <div
-              key={index}
-              className={`w-20 h-20 sm:w-24 sm:h-24 rounded-lg flex items-center justify-center font-semibold ${
-                index === 2 ? "bg-white shadow-lg text-gray-600" : "bg-gray-300"
-              }`}
-            >
-              {index === 2 ? "#Insta" : ""}
-            </div>
-          ))}
       </div>
     </div>
   );
