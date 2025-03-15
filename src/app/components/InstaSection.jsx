@@ -3,10 +3,11 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import image1 from "../assets/images/card/7.jpg.png";
-import image2 from "../assets/images/card/8.jpg.png";
-import image3 from "../assets/images/card/9.jpg.png";
-import image4 from "../assets/images/card/10.jpg.png";
+import image1 from "../assets/images/card/7.png";
+import image2 from "../assets/images/card/8.png";
+import image3 from "../assets/images/card/9.png";
+import image4 from "../assets/images/card/10.png";
+// import bgImage from "../assets/images/background.jpg";
 
 const posts = [
   {
@@ -41,7 +42,10 @@ const posts = [
 
 const InstaSection = () => {
   return (
-    <div className="bg-gray-50 flex flex-col items-center px-6 py-12">
+    <div 
+      className="bg-gray-50 flex flex-col items-center px-6 py-12 relative bg-cover bg-center"
+      
+    >
       <h2 className="text-2xl font-bold mb-6 text-gray-800">Latest Insights</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-6xl">
         {posts.map((post, index) => (
@@ -50,12 +54,12 @@ const InstaSection = () => {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: index * 0.2 }}
-            className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow"
+            className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-shadow relative"
           >
             <div className="relative h-48 w-full">
               <Image src={post.image} alt={post.title} layout="fill" objectFit="cover" className="rounded-t-2xl" />
             </div>
-            <div className="p-4">
+            <div className="p-4 relative bg-white">
               <p className="text-xs text-gray-500">{post.date} - {post.category}</p>
               <h3 className="text-sm font-semibold mt-1 text-gray-800">{post.title}</h3>
             </div>

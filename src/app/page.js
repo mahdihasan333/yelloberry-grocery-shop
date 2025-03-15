@@ -10,6 +10,7 @@ import NewArrivals from "./components/NewArrivals";
 import TopVendors from "./components/TopVendors";
 import Testimonials from "./components/Testimonials";
 import InstaSection from "./components/InstaSection";
+import InstraPicture from "./components/InstraPicture";
 
 
 
@@ -26,6 +27,7 @@ export default function Home() {
       <TopVendors/>
       <Testimonials/>
       <InstaSection/>
+      <InstraPicture/>
       <Brand/>
     </div>
   );
